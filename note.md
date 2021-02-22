@@ -97,7 +97,7 @@
 >
 > hexo g  生成静态文件
 >
-> hexo s 启动服务器(搭配上面的使用,使用http://localhost:4000/预览效果)
+> hexo s 启动服务器(搭配上面的使用,使用`http://localhost:4000/`预览效果)
 >
 > hexo clean 清理缓存和静态文件(搭配下面的hexo deploy一起用)
 >
