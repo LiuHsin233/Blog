@@ -18,7 +18,7 @@
     >
     > 比如说需要安装hexo就`npm install hexo`,其余以此类推
     >
-    > hexo-deployer-git 用于生成文件直接同步到你的库中
+    > hexo-deployer-git 用于生成文件直接同步到你的库中   
     >
     > hexo-toc 是提供toc支持markdown文本的toc支持(可以不装)
     
