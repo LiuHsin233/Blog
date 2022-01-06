@@ -6,12 +6,13 @@ tags:
 
 <!-- toc -->
 
-[toc]
 
 # 基本概念简介和mySQL的安装配置
 ## 基本概念介绍
 ### 数据库的作用
-> DataBase(DB)用来存放和管理数据
+
+DataBase(DB)用来存放和管理数据
+
 1. 数据共享
 2. 减少数据冗余(每个应用不需要单独存放数据)
 3. 数据独立
@@ -24,18 +25,19 @@ tags:
 3. Oracle 世界使用最广泛之一
 4. Sybase 开放 高性能
 5. DB2 IBM开发 主要用于大型应用
-> 关系型数据库 由二维表的形式存放数据(可以用SQL查询语句)
-> 非关系型数据库(NoSQL) 存储格式灵活(不支持SQL查询语句)
+    > 关系型数据库 由二维表的形式存放数据(可以用SQL查询语句)
+    > 非关系型数据库(NoSQL) 存储格式灵活(不支持SQL查询语句)
 ### 关于SQL
 结构化查询语言(Structured Query Language),简称SQL 访问标准数据库的标准计算机语言
 ## MySQL的安装和配置
 ## SQL语法
-> [SQL语法](http://www.w3school.com.cn/sql/index.asp)
-> 对于不同的SQL数据库可能有各自的私有拓展,但是都支持SQL标准
+[SQL语法](http://www.w3school.com.cn/sql/index.asp)对于不同的SQL数据库可能有各自的私有拓展,但是都支持SQL标准
+
 ### 数据库表
-> 关系型数据库以二维表方式存放数据,一个数据库中通常包含一个或者多个表
+关系型数据库以二维表方式存放数据,一个数据库中通常包含一个或者多个表
 
 **Persons**
+
 |  ID  | 姓名 | 年龄 | 城市 |
 | :--: | :--: | :--: | :--: |
 |  1   | 张三 |  19  | 武汉 |
@@ -44,10 +46,7 @@ tags:
 
 上述表格Persons中包含三条**记录**,和四**列**(id 姓名 年龄和城市)
 ## SQL语句分类
-
-> 数据库执行的所有工作由SQL语句完成,大致可以分为DDL,DML和DQL三种
->
-> SQL对大小写不敏感
+数据库执行的所有工作由SQL语句完成,大致可以分为DDL,DML和DQL三种(SQL对大小写不敏感)
 
 1. DML 数据操作语言(Data Manipulation Language)
 主要是添加删除更新数据
@@ -86,13 +85,15 @@ tags:
 ### select
 作用 从表格中选取数据,结果存放在结果表(也称为结果集)
 **语句使用格式 `select 列名 from 表名`**
-> 如果需要选取多个列则用逗号隔开
->
-> >选取部分 `select ID,姓名 from Persons`
 
-> 如果需要选取所有列可以直接使用*
->
-> >选取全部 `select * from Persons`
+```sql
+-- 如果需要选取多个列则用逗号隔开
+select ID,姓名 from Persons
+
+-- 如果需要选取所有列可以直接使用*
+select * from Persons
+```
+
 #### 关键字 distinct
 在选取的时候 可能存在重复的值,可以加上distinct这个关键字来避免重复
 **避免重复 `select distinct 列名 from 表名`**
@@ -148,19 +149,24 @@ tags:
 * SQL Server
   `select top number|percent 列名 from 表名`
 
-  > 1. 从表中选取最前面的两条
-  >
-  >    `select top 2 * from Persons`
-  >
-  > 2. 从表中选取前50%
-  >
-  >    ` select top 50 PERCENT * from Persons`
+  ```sql
+  -- 从表中选取最前面的两条
+  select top 2 * from Persons
+  
+  -- 从表中选取前50%
+  select top 50 PERCENT * from Persons
+  ```
+  
 * MySQL
   `select 列名 from 表名 LIMIT number`
 
-  > 从表里面选取前5条数据
-  >
-  > `select * from Persons LIMIT 5`
+  ```sql
+  -- 从表里面选取前5条数据
+  select * from Persons LIMIT 5
+  ```
+  
+  
+  
 * Oracle
 `select 列名 from 表名 where ROWNUM <= number`
 ### like子句
