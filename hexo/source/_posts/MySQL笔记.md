@@ -7,7 +7,7 @@ tags:
 <!-- toc -->
 
 
-# 基本概念简介和mySQL的安装配置
+# 基本概念简介
 ## 基本概念介绍
 ### 数据库的作用
 
@@ -33,11 +33,11 @@ DataBase(DB)用来存放和管理数据
 
 ### 关于SQL
 结构化查询语言(Structured Query Language),简称SQL 访问标准数据库的标准计算机语言
-## MySQL的安装和配置
-## SQL语法
+# MySQL的安装和配置
+# SQL语法
 [SQL语法](http://www.w3school.com.cn/sql/index.asp)对于不同的SQL数据库可能有各自的私有拓展,但是都支持SQL标准
 
-### 数据库表
+## 数据库表
 关系型数据库以二维表方式存放数据,一个数据库中通常包含一个或者多个表
 
 **Persons**
@@ -83,6 +83,17 @@ DataBase(DB)用来存放和管理数据
    | select | 从数据库中查询数据 |
 
    
+### 关于注释
+
+```sql
+-- 单行注释,不能换行
+/*
+ 这种是多行注释
+ 可以任意行
+*/
+```
+
+
 
 ## DQL和DML语句
 
@@ -125,16 +136,31 @@ select * from Persons
 `select * from Persons where (ID>2 and ID<4) or 名字='李四'`
 #### order by
 按照某一列对结果进行升序排序
-按照id升序排序`select * from Persons order by ID`
-如果想要降序使用关键字**desc** ,升序关键字**asc**(默认升序)
-按照ID降序,按照名字升序`select * from Persons order by ID desc,名字 asc`
+
+```sql
+/*
+order by 可以将查询到的结果按照升序或者降序排列,搭配关键字asc和desc使用
+asc 升序(默认,可省略)
+desc 降序
+*/
+-- 按照id升序排列(省略了asc)
+select * from Persons order by ID
+-- 按照id降序排列
+select * from Persons order by ID desc
+-- 按照id降序,然后按照名字升序
+select * from Persons order by ID desc,名字 asc
+```
 
 ### insert into
-用于在指定表格中插入一条记录
-插入一条完整的记录
-`insert into Persons values(20,'赵六',17,'长沙')`
-如果是不完整的记录(某些信息为空)
-`insert into Persons(ID,名字) value(21,'孙七')`
+```sql
+/*
+insert into 用于在指定表格中插入一条记录
+*/
+-- 如果是一条完整的数据,那么注意value后面的几个值要和表中的字段一一对应
+insert into Persons value(20,'赵六',17,'长沙')
+-- 如果不是一条完整的数据,那么在表名后面加上你要插入的列名,value后面的几个值和列名一一对应
+insert into Persons(ID,名字) value(21,'孙七')
+```
 
 ### update
 用于修改表中的数据
