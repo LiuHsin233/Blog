@@ -1,7 +1,7 @@
 ---
-title: MySQL学习笔记03
+title: MySQL学习笔记04
 date: 2022-01-11 17:08:31
-tags:[MySQL]
+tags: [MySQL]
 ---
 
 <!-- toc -->
@@ -33,6 +33,9 @@ select * from Persons
 ```
 
 `select id,name from Persons`这个查询得到的结果集如下
+
+
+
 | id   | name |
 | ---- | ---- |
 | 1    | 张三 |

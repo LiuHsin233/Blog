@@ -1,7 +1,7 @@
 ---
 title: MySQL学习笔记03
 date: 2022-01-10 17:08:31
-tags:[MySQL]
+tags: [MySQL]
 ---
 
 <!-- toc -->
