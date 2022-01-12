@@ -161,19 +161,22 @@ search:
 # Comment plugin configurations 评论插件,需要另外设置
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: gitment
-    enable: true # 是否开启gitment评论系统
-    mint: true #
-    count: true # 是否显示评论数
-    lazy: true # 懒加载，设置为ture时需手动展开评论
-    cleanly: true # 是否隐藏'Powered by ...'
-    language: en # 语言，置空则随主题的语言
-    github_user: LiuHsin # Github用户名
-    github_repo: blog_comment # 在Github新建一个仓库用于存放评论，这是仓库名
-    client_id: 68262e60dbe732abe253 # 注册OAuth Application时生成
-    client_secret: 769bdd3afe9b7377405d133cfe5a50b23ec62d6c # 注册OAuth Application时生成
-    proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-    redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+    type: gitalk
+    client_id: 4d387ae066ca6f4c28b5
+    client_secret: 0ca669e9b90a7c9a19d11e0e66ec04013808ba92
+    repo: blog_comment # 存放评论的项目名字
+    owner: LiuHsin233
+    admin:
+        - LiuHsin233
+    per_page: 20                    # 可选填
+    distraction_free_mode: false    # 可选填
+    pager_direction: last           # 可选填
+    create_issue_manually: false    # 可选填
+    proxy:                          # 可选填
+    flip_move_options:              # 可选填
+    enable_hotkey: true             # 可选填
+    language: zh-CN                 # 可选填
+
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -181,24 +184,24 @@ donates:
     -
         type: afdian
         # URL to the "Afdian.net" personal page
-        url: ''
+        -- url: ''
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: 'https://github.com/LiuHsin233/Blog/blob/f2ab175d3c2b9cba4166cbdc692bc7a8c2b4ff59/hexo/source/pic/alipay.jpg'
+        qrcode: 'https://LiuHsin233.com/main//img/alipay.jpg'
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
         # URL to the "Buy me a coffee" page
         url: ''
     # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
+    #-
+    #    type: patreon
+    #    # URL to the Patreon page
+    #    url: ''
     # Paypal donate button configurations
-    -
+    #-
         #type: paypal
         # Paypal business ID or email address
         # business: ''
@@ -208,13 +211,13 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: 'https://github.com/LiuHsin233/Blog/blob/f2ab175d3c2b9cba4166cbdc692bc7a8c2b4ff59/hexo/source/pic/wechat_pay.jpg'
+        qrcode: 'https://LiuHsin233.com/main//img/wechat_pay.jpg'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
     type: sharethis
     # URL to the ShareThis share plugin script
-    install_url: ''
+    install_url: https://platform-api.sharethis.com/js/sharethis.js#property=61de9b02e238be00197b66da&product=inline-share-buttons
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -241,7 +244,7 @@ widgets:
         # Author's current location
         location: 中国湖北
         # URL or path to the avatar image
-        avatar: 'https://github.com/LiuHsin233/Blog/blob/f2ab175d3c2b9cba4166cbdc692bc7a8c2b4ff59/hexo/source/pic/self.jpg'
+        avatar: 'https://LiuHsin233.com/main//img/self.jpg'
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar

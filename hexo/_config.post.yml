@@ -1,0 +1,11 @@
+widgets:
+    -
+        type: toc
+        position: right
+        # 是否显示每个标题的索引
+        index: true
+        # 是否在看不到副标题时折叠副标题
+        collapsed: true
+        # 标题显示的最高水平
+        depth: 5
+        sticky: true
