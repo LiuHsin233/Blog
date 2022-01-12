@@ -189,7 +189,7 @@ donates:
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: https://raw.githubusercontent.com/LiuHsin233/img/alipay.jpg
+        qrcode: https://gitee.com/SZn233/picture/raw/master/img/alipay.jpg
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
@@ -211,7 +211,7 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: https://raw.githubusercontent.com/LiuHsin233/img/wechat_pay.jpg
+        qrcode: https://gitee.com/SZn233/picture/raw/master/img/wechat_pay.jpg
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
@@ -244,7 +244,7 @@ widgets:
         # Author's current location
         location: 中国湖北
         # URL or path to the avatar image
-        avatar: https://raw.githubusercontent.com/LiuHsin233/img/self.jpg
+        avatar: https://gitee.com/SZn233/picture/raw/master/img/self.jpg
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
