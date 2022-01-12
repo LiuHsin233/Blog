@@ -1,15 +1,13 @@
 ---
-title: MySQL学习笔记03
+title: MySQL学习笔记03_SQL语句
 date: 2022-01-10 17:08:31
 tags: [MySQL]
 toc: true
 ---
 
-# SQL语句
-
 数据库执行的所有工作都由SQL语句完成,可以分成DML和DDL两种
 
-## DML 数据操作语言(Data Manipulation Language)
+# DML 数据操作语言(Data Manipulation Language)
 
 主要是对数据的增删查改(最常用的操作是查询)
 
@@ -22,7 +20,7 @@ toc: true
 
 <!--more-->
 
-## DDL 数据定义语言 (Data Definition Language)
+# DDL 数据定义语言 (Data Definition Language)
 
 主要是创造和删除表格,也可以定义索引,构建表和表之间的联系,添加表之间的约束(一般是数据库管理员做的操作)
 
@@ -36,9 +34,9 @@ toc: true
 | create index    | 创建索引       |
 | drop index      | 删除索引       |
 
-## 备注
+# 备注
 
-### 注释方式
+## 注释方式
 
 不同数据库的注释方式可能有些区别,这里只介绍两种,不过多展开
 
@@ -50,7 +48,7 @@ toc: true
 */
 ```
 
-### 关于大小写
+## 关于大小写
 
 sql对大小写并不敏感,也就是说,英文字符的大小写并不影响语句内容
 

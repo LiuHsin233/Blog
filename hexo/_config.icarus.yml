@@ -244,7 +244,7 @@ widgets:
         # Author's current location
         location: 中国湖北
         # URL or path to the avatar image
-        avatar: https://gitee.com/SZn233/picture/raw/master/img/self.jpg
+        # avatar: https://gitee.com/SZn233/picture/raw/master/img/self.jpg
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar

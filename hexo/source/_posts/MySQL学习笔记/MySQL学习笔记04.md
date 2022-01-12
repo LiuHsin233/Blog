@@ -1,11 +1,9 @@
 ---
-title: MySQL学习笔记04
+title: MySQL学习笔记04_DML语句
 date: 2022-01-11 17:08:31
 tags: [MySQL]
 toc: true
 ---
-
-# DQL语句
 
 **Persons**
 
@@ -17,7 +15,7 @@ toc: true
 | 4    | 赵六 | 22   | 北京 |
 | 5    | 孙七 | 20   | 武汉 |
 
-## select
+# select
 
 作用: 从表格中选取数据,结果放入结果表(也称作结果集)
 
@@ -44,7 +42,7 @@ select * from Persons
 | 4    | 赵六 |
 | 5    | 孙七 |
 
-### distinct
+## distinct
 
 查询过程中如果想要去除重复值,使用distinct
 
@@ -55,7 +53,7 @@ select * from Persons
 select distinct city from Persons
 ```
 
-### where
+## where
 
 用于有条件在表中选取数据
 
@@ -85,7 +83,7 @@ select * from Persons where city = '武汉'
 | between | 在某个范围内               |
 |  like   | 搜索某种模式               |
 
-#### between
+### between
 
 指定范围
 
@@ -97,7 +95,7 @@ select * from Persons where age between 18 and 23 -- 其实就相当于 age >=18
 select * from Persons where age not between 18 and 23
 ```
 
-#### like
+### like
 
 用来查找指定条件的语句(匹配字符串)
 
@@ -118,7 +116,7 @@ select * from Persons where name like 'N%'
 |        [字符表]        | 表示表中的任意一个字符     |      `[lf]uck`       |
 | [^字符表]或者[!字符表] | 表示不在表中的任意一个字符 | `[!123]`或者`[^123]` |
 
-#### in
+### in
 
 允许查找的时候指定多个值
 
@@ -130,7 +128,7 @@ select * from Persons where name like 'N%'
 select * from Persons where city in ('长沙','武汉')
 ```
 
-### top
+## top
 
 规定需要返回的语句条目数,不同数据库系统不一定支持top
 
@@ -155,7 +153,7 @@ select * from Persons where rownum <= 50
 
 
 
-## insert into
+# insert into
 
 用于在指定表格中插入一条数据
 
@@ -168,7 +166,7 @@ insert into Persons value(20,'赵六',17,'长沙')
 insert into Persons(id,name) value(21,'孙七')
 ```
 
-## update
+# update
 
 用于更新表中的数据
 
@@ -190,7 +188,7 @@ update Persons
 set age = 17
 ```
 
-## delete
+# delete
 
 用于删除表中的记录
 
