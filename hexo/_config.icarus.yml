@@ -176,7 +176,7 @@ donates:
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: ''
+        qrcode: 'https://github.com/LiuHsin233/Blog/blob/main/hexo/source/pic/alipay.jpg'
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
@@ -198,7 +198,7 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+        qrcode: 'https://github.com/LiuHsin233/Blog/blob/main/hexo/source/pic/wechat_pay.jpg'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
@@ -227,7 +227,7 @@ widgets:
         # Author name
         author: LiuHsin
         # Author title
-        author_title: Your title
+        # author_title: Your title
         # Author's current location
         location: 中国湖北
         # URL or path to the avatar image
@@ -273,8 +273,7 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
+            github: 'https://github.com/LiuHsin233'
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
