@@ -2,9 +2,8 @@
 title: MySQL学习笔记03
 date: 2022-01-10 17:08:31
 tags: [MySQL]
+toc: true
 ---
-
-<!-- toc -->
 
 # SQL语句
 
@@ -20,6 +19,8 @@ tags: [MySQL]
 | update      | 更新数据表         |
 | delete      | 从数据表中删除数据 |
 | insert into | 插入数据           |
+
+<!--more-->
 
 ## DDL 数据定义语言 (Data Definition Language)
 

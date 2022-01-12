@@ -2,9 +2,8 @@
 title: MySQL学习笔记04
 date: 2022-01-11 17:08:31
 tags: [MySQL]
+toc: true
 ---
-
-<!-- toc -->
 
 # DQL语句
 
@@ -31,6 +30,7 @@ select id,name from Persons
 -- 如果需要查询所有列的话,可以直接使用*
 select * from Persons
 ```
+<!--more-->
 
 `select id,name from Persons`这个查询得到的结果集如下
 

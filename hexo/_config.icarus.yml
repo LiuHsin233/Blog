@@ -231,7 +231,7 @@ widgets:
         # Author's current location
         location: 中国湖北
         # URL or path to the avatar image
-        avatar: 
+        avatar: 'https://github.com/LiuHsin233/Blog/blob/main/hexo/source/pic/self.jpg'
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
@@ -258,7 +258,7 @@ widgets:
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: toc
         # Whether to show the index of each heading
         index: true
