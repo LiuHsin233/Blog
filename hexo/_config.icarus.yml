@@ -158,12 +158,12 @@ article:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
     type: insight
-# Comment plugin configurations
+# Comment plugin configurations 评论插件,需要另外设置
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
+    type: gitment
     # Disqus shortname
-    shortname: ''
+    # shortname: ''
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -265,7 +265,7 @@ widgets:
         # Whether to collapse sub-headings when they are out-of-view
         collapsed: true
         # Maximum level of headings to show (1-6)
-        depth: 3
+        depth: 6
     # Recommendation links widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
