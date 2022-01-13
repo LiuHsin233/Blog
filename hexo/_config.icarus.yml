@@ -128,18 +128,18 @@ footer:
         Download on GitHub:
             icon: fab fa-github
             url: 'https://github.com/ppoffice/hexo-theme-icarus'
-# Article related configurations
+# 文章显示设置
 article:
     # Code highlight settings
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        theme: atom-one-light
-        # Show copy code button
+        theme: atom-one-dark  # 代码主题atom-one-light 亮色，atom-one-dark 暗色
+        #  显示代码copy按钮 
         clipboard: true
-        # Default folding status of the code blocks. Can be "", "folded", "unfolded"
+        # 是否折叠代码块 "", "folded", "unfolded"
         fold: unfolded
-    # Whether to show estimated article reading time
+    # 是否显示估算阅读时间
     readtime: true
     # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
     update_time: true
@@ -154,6 +154,7 @@ article:
         Noncommercial:
             icon: fab fa-creative-commons-nc
             url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+            
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
@@ -180,21 +181,28 @@ comment:
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
-    # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        -- url: ''
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: https://gitee.com/SZn233/picture/raw/master/img/alipay.jpg
-    # "Buy me a coffee" donate button configurations
+        qrcode: /assets/img/alipay.jpg
+    # Wechat donate button configurations
     -
-        type: buymeacoffee
+        type: wechat
+        # Wechat qrcode image URL
+        qrcode: /assets/img/wechat.jpg
+    
+    # "Afdian.net" donate button configurations
+    #-
+    #    type: afdian
+        # URL to the "Afdian.net" personal page
+        #-- url: ''
+
+    # "Buy me a coffee" donate button configurations
+    #-
+        #type: buymeacoffee
         # URL to the "Buy me a coffee" page
-        url: ''
+        #url: ''
     # Patreon donate button configurations
     #-
     #    type: patreon
@@ -207,17 +215,14 @@ donates:
         # business: ''
         # Currency code
         #currency_code: USD
-    # Wechat donate button configurations
-    -
-        type: wechat
-        # Wechat qrcode image URL
-        qrcode: https://gitee.com/SZn233/picture/raw/master/img/wechat_pay.jpg
+
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
     type: sharethis
     # URL to the ShareThis share plugin script
     install_url: https://platform-api.sharethis.com/js/sharethis.js#property=61de9b02e238be00197b66da&product=inline-share-buttons
+    
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -234,40 +239,28 @@ sidebar:
 widgets:
     # Profile widget configurations
     -
-        # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: profile
-        # Author name
+        # 作者名称
         author: LiuHsin
-        # Author title
-        # author_title: Your title
-        # Author's current location
+        # 作者头衔
+        author_title: A GitHub Octocat
+        # 作者所在地/公司
         location: 中国湖北
-        # URL or path to the avatar image
-        # avatar: https://gitee.com/SZn233/picture/raw/master/img/self.jpg
-        # Whether show the rounded avatar image
+        # 头像图片地址
+        avatar: /assets/img/avatar.jpeg
+        # 是否显示圆形头像
         avatar_rounded: false
-        # Email address for the Gravatar
-        gravatar: LiuHsin@yeah.net
-        # URL or path for the follow button
+        # Gravatar邮箱(如不设置`avatar`项) 需要注册gravatar才能有效
+        gravatar: #LiuHsin@yeah.net # 这里貌似国内有强所以不一定能正常显示
+        # 关注按钮链接地址
         follow_link: 'https://github.com/LiuHsin233'
-        # Links to be shown on the bottom of the profile widget
+        # 社交媒体链接
         social_links:
             Github:
                 icon: fab fa-github
                 url: 'https://github.com/LiuHsin233'
-            Facebook:
-                icon: fab fa-facebook
-                url: 'https://facebook.com'
-            Twitter:
-                icon: fab fa-twitter
-                url: 'https://twitter.com'
-            Dribbble:
-                icon: fab fa-dribbble
-                url: 'https://dribbble.com'
-            RSS:
-                icon: fas fa-rss
-                url: /
+
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -278,7 +271,7 @@ widgets:
         # Whether to collapse sub-headings when they are out-of-view
         collapsed: true
         # Maximum level of headings to show (1-6)
-        depth: 6
+        max_depth: 6
     # Recommendation links widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
