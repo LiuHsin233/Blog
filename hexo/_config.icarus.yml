@@ -1,8 +1,10 @@
 # Version of the configuration file
 version: 4.0.0
-# Icarus theme variant, can be "default" or "cyberpunk"
+# 主题,支持"default" 和 "cyberpunk"
 variant: cyberpunk
-# Path or URL to the website's logo
+# 网站logo,可以使用logo图标或者文字
+# log:
+#   text: 星球调查笔记
 logo: /img/logo.svg
 # Page metadata configurations
 head:
@@ -233,7 +235,7 @@ sidebar:
     # Right sidebar configurations
     right:
         # Whether the sidebar sticks to the top when page scrolls
-        sticky: false
+        sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
