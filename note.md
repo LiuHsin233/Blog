@@ -7,7 +7,7 @@
 1. 需要安装的软件 node.js和git
 
 2. 使用npm安装hexo和一些插件,参考文档https://hexo.io/zh-cn/docs/
-    
+   
     > 安装方式:在安装node.js之后在控制台直接输入npm install [packname])
     >
     > 需要安装的内容:

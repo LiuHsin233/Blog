@@ -5,7 +5,7 @@ variant: cyberpunk
 # 网站logo,可以使用logo图标或者文字
 # log:
 #   text: 星球调查笔记
-logo: /img/logo.svg
+logo: /img/logo.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
