@@ -1,5 +1,5 @@
 ---
-title: MySQL学习笔记04_DDL语句
+title: MySQL学习笔记05_DDL语句
 date: 2022-01-14 14:09:31
 tags: [MySQL]
 toc: true
