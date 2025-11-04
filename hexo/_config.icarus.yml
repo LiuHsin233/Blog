@@ -50,7 +50,7 @@ navbar:
         分类: /categories
         标签: /tags
         关于: /about
-	留言: /message
+        留言: /message
 
     links:
         Download on GitHub:
